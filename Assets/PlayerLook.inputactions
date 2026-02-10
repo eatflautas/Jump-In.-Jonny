@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "PlayerLook",
+    "maps": [
+        {
+            "name": "Mouse",
+            "id": "3aa08f10-0b7d-4f88-a77f-31c6c8a071b5",
+            "actions": [
+                {
+                    "name": "MouseLook",
+                    "type": "PassThrough",
+                    "id": "3a26c1e9-a3f1-44a0-8153-17f6b69838a4",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1c17a1a2-3bcc-4873-8a36-7748195e7a7b",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseLook",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

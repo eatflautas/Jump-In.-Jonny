@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
                     public InputActionReference moveAction; // expects Vector2
                     public InputActionReference jumpAction; // expects Button
 
+                    public Transform orientation;
+
                     private void Awake()
                     {
                         controller = gameObject.AddComponent<CharacterController>();
