@@ -1010,7 +1010,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1176085141}
   - component: {fileID: 1176085142}
-  - component: {fileID: 1176085143}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1049,24 +1048,9 @@ MonoBehaviour:
   moveAction: {fileID: -1680190386980627800, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   jumpAction: {fileID: -2099379676528639254, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   orientation: {fileID: 1176085141}
---- !u!114 &1176085143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1176085140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ac8acd48a3c37d4aa38e17314abffbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerCamera
   mouseLookAction: {fileID: -3333948902312710595, guid: abb91d6c2d28a814caf70d49d126292b, type: 3}
-  orientation: {fileID: 1176085141}
-  player: {fileID: 1176085141}
-  playerObj: {fileID: 951503673}
-  rb: {fileID: 0}
-  rotationSpeed: 10
+  cameraTransform: {fileID: 967904778}
+  shouldFaceMoveDirection: 1
 --- !u!1001 &1712080120
 PrefabInstance:
   m_ObjectHideFlags: 0
