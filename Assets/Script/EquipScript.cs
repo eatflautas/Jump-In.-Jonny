@@ -5,73 +5,80 @@ using UnityEngine;
 public class EquipScript : MonoBehaviour
 {
     public Transform PlayerTransform;
-    public GameObject Gun;
     public Camera Camera;
-    public float range = 2f;
-    
+    public float range = 3f;
+
     [Header("Throw Settings")]
     public float throwForce = 15f;
     public float extraUpwardForce = 2f;
 
-    // This tracks whether the gun is in our hands
-    private bool isHolding = true; 
-
-    void Start()
-    {
-        // Start the game with the gun dropped/kinematic off 
-        // OR set this based on your initial scene setup
-        Gun.GetComponent<Rigidbody>().isKinematic = true;
-    }
+    // This now tracks whatever object we are currently holding
+    private GameObject currentItem;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if (isHolding)
+            // If we are already holding something, drop/throw it first
+            if (currentItem != null)
             {
                 UnequipObject();
             }
+            // If we aren't holding anything, try to pick something up
             else
             {
-                Shoot(); // This is your "Pick Up" raycast logic
+                CheckForPickup();
             }
         }
     }
 
-    void Shoot()
+    void CheckForPickup()
     {
         RaycastHit hit;
+        // Search for objects in front of the camera
         if (Physics.Raycast(Camera.transform.position, Camera.transform.forward, out hit, range))
         {
-            // Check if we hit the Gun or a Target
-            if (hit.transform.gameObject == Gun || hit.transform.GetComponent<Target>() != null)
+            // IMPORTANT: Make sure the pickable objects have the Tag "Item" 
+            // and a Rigidbody component
+            if (hit.transform.CompareTag("Item"))
             {
-                EquipObject();
+                EquipObject(hit.transform.gameObject);
             }
         }
+    }
+
+    void EquipObject(GameObject obj)
+    {
+        currentItem = obj;
+        
+        Rigidbody rb = currentItem.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.isKinematic = true; // Stop physics while holding
+            rb.detectCollisions = false; // Prevent it from bumping into you
+        }
+
+        // Snap to hand position
+        currentItem.transform.SetParent(PlayerTransform);
+        currentItem.transform.localPosition = Vector3.zero;
+        currentItem.transform.localRotation = Quaternion.identity;
     }
 
     void UnequipObject()
     {
-        isHolding = false; // Update our state
+        Rigidbody rb = currentItem.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.isKinematic = false;
+            rb.detectCollisions = true;
 
-        Gun.transform.SetParent(null); 
-        Rigidbody rb = Gun.GetComponent<Rigidbody>();
-        rb.isKinematic = false;
+            // Throw logic
+            Vector3 forceToApply = Camera.transform.forward * throwForce + transform.up * extraUpwardForce;
+            rb.AddForce(forceToApply, ForceMode.Impulse);
+            rb.AddTorque(new Vector3(Random.Range(-5, 5), 5, Random.Range(-5, 5)));
+        }
 
-        Vector3 forceToApply = Camera.transform.forward * throwForce + transform.up * extraUpwardForce;
-        rb.AddForce(forceToApply, ForceMode.Impulse);
-        
-        rb.AddTorque(new Vector3(Random.Range(-10, 10), 10, Random.Range(-10, 10)));
-    }
-
-    void EquipObject()
-    {
-        isHolding = true; // Update our state
-
-        Gun.GetComponent<Rigidbody>().isKinematic = true;
-        Gun.transform.position = PlayerTransform.transform.position;
-        Gun.transform.rotation = PlayerTransform.transform.rotation;
-        Gun.transform.SetParent(PlayerTransform);
+        currentItem.transform.SetParent(null);
+        currentItem = null; // We are no longer holding anything
     }
 }

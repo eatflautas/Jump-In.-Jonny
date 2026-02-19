@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d3cc1b3a-195f-4dd2-8afb-286cdf981603" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Jump-In.-Jonny/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jump-In.-Jonny/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character Controller.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character Controller.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Sandbox.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Sandbox.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/EquipScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/EquipScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +104,7 @@
       <workItem from="1771469276540" duration="5000" />
       <workItem from="1771469282927" duration="67000" />
       <workItem from="1771469582700" duration="680000" />
-      <workItem from="1771497409656" duration="1957000" />
+      <workItem from="1771497409656" duration="2956000" />
     </task>
     <servers />
   </component>
