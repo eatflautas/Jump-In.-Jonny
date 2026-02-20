@@ -1,0 +1,36 @@
+Third-Party Assets Included in the Package:
+
+1. **car.fbx**:
+   - Licensed under: **CC0 (Public Domain)**
+   - Attribution: None required
+   - Description: 3D model of a car.
+
+2. **rocks.fbx**:
+   - Licensed under: **CC0 (Public Domain)**
+   - Attribution: None required
+   - Description: 3D model of rocks.
+
+3. **statue.fbx**:
+   - Licensed under: **CC0 (Public Domain)**
+   - Attribution: None required
+   - Description: 3D model of a statue.
+
+4. **rock texture.png**:
+   - Licensed under: **CC0 (Public Domain)**
+   - Attribution: None required
+   - Description: Texture for rocks.
+
+5. **car texture.png**:
+   - Licensed under: **CC0 (Public Domain)**
+   - Attribution: None required
+   - Description: Texture for the car model.
+
+6. **statue png.png**:
+   - Licensed under: **CC0 (Public Domain)**
+   - Attribution: None required
+   - Description: Texture for the statue model.
+
+All assets in this package are licensed under CC0 (Public Domain). 
+You may use, modify, and distribute them freely for both personal and commercial purposes. Attribution is not required.
+No further permission is necessary for usage or modification of these assets.
+

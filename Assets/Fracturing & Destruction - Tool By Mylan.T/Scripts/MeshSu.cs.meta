@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a738c00ca1ebbc7468928693b8695a2f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307711
+  packageName: Fracturing & Destruction - Tool
+  packageVersion: 1.0
+  assetPath: Assets/Fracturing & Destruction - Tool By Mylan.T/Scripts/MeshSu.cs
+  uploadId: 728511
