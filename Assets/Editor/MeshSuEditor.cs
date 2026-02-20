@@ -14,8 +14,7 @@ namespace MeshSuFracturerTool {
         private float neededCollisionForceToDestroy = 10f;
         private float explodeForce = 100f;
         private ParticleSystem explosionParticleSystem;
-
-        [MenuItem("Tools/Mesh Fracture Tool")]
+        
         public static void ShowWindow()
         {
             GetWindow<MeshFractureWindow>("Mesh Fracture Tool");
