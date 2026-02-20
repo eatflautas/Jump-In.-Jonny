@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 79969943510193512}
   - component: {fileID: 8678024023199718834}
   - component: {fileID: 1638196046461813877}
+  - component: {fileID: 8007032942247725512}
   m_Layer: 0
   m_Name: Dumbell1
   m_TagString: Item
@@ -29,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8098680749642131437}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.3412876, y: 0.8002361, z: -3.0586803}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -154,3 +155,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Target
   drop: 2
+--- !u!114 &8007032942247725512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8098680749642131437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a738c00ca1ebbc7468928693b8695a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeshSuFracturer.MeshSu
+  CutCascades: 8
+  CombineAllFractures: 1
+  DestroyMeshRightNow: 0
+  DestroyOnCollision: 1
+  NeededCollisionForceToDestroy: 3
+  ExplodeForce: 500
+  ExplosionParticleSystem: {fileID: 0}

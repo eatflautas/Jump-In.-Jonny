@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7735686396937524494}
   - component: {fileID: 9146340429959689039}
   - component: {fileID: 6665527739908716690}
+  - component: {fileID: 3977722201630754186}
   m_Layer: 0
   m_Name: GasCan
   m_TagString: Item
@@ -29,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1465071138485959233}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.4726806, y: 1.094, z: -0.02425003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -154,3 +155,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.56272686, y: 0.80872405, z: 0.2282689}
   m_Center: {x: 0.000574857, y: 0.4049791, z: -0.000000014901161}
+--- !u!114 &3977722201630754186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465071138485959233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a738c00ca1ebbc7468928693b8695a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeshSuFracturer.MeshSu
+  CutCascades: 8
+  CombineAllFractures: 1
+  DestroyMeshRightNow: 0
+  DestroyOnCollision: 1
+  NeededCollisionForceToDestroy: 3
+  ExplodeForce: 500
+  ExplosionParticleSystem: {fileID: 0}

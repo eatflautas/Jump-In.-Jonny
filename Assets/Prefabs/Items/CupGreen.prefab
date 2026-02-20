@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8459848368074330636}
   - component: {fileID: 361111477680711555}
   - component: {fileID: 651554525849552700}
+  - component: {fileID: 2051968836457265668}
   m_Layer: 0
   m_Name: CupGreen
   m_TagString: Item
@@ -29,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7101693373866714764}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.2418594, y: 0.79904455, z: -6.547867}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -154,3 +155,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Target
   drop: 2
+--- !u!114 &2051968836457265668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7101693373866714764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a738c00ca1ebbc7468928693b8695a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeshSuFracturer.MeshSu
+  CutCascades: 8
+  CombineAllFractures: 1
+  DestroyMeshRightNow: 0
+  DestroyOnCollision: 1
+  NeededCollisionForceToDestroy: 3
+  ExplodeForce: 500
+  ExplosionParticleSystem: {fileID: 0}

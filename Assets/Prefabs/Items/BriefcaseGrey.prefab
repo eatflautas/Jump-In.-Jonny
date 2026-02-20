@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4752517001066417853}
   - component: {fileID: 2007753583905654362}
   - component: {fileID: 6812126411452846571}
+  - component: {fileID: 8292781547199778075}
   m_Layer: 0
   m_Name: BriefcaseGrey
   m_TagString: Item
@@ -29,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 389275889540511187}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.3595572, y: 1.0000198, z: 1.5806885}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -154,3 +155,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.7071317, y: 0.6331761, z: 0.16312522}
   m_Center: {x: 0, y: 0.31656814, z: -0.000000011175871}
+--- !u!114 &8292781547199778075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389275889540511187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a738c00ca1ebbc7468928693b8695a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeshSuFracturer.MeshSu
+  CutCascades: 8
+  CombineAllFractures: 1
+  DestroyMeshRightNow: 0
+  DestroyOnCollision: 1
+  NeededCollisionForceToDestroy: 3
+  ExplodeForce: 500
+  ExplosionParticleSystem: {fileID: 0}

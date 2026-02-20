@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1807007895493597278}
   - component: {fileID: 7299915644915276466}
   - component: {fileID: 4479285674120334117}
+  - component: {fileID: 6997567583058548978}
   m_Layer: 0
   m_Name: FastCoffeeCupGreen
   m_TagString: Item
@@ -29,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4625929010844233211}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.2318096, y: 0.7997468, z: -7.2162504}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -154,3 +155,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Target
   drop: 2
+--- !u!114 &6997567583058548978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4625929010844233211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a738c00ca1ebbc7468928693b8695a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MeshSuFracturer.MeshSu
+  CutCascades: 8
+  CombineAllFractures: 1
+  DestroyMeshRightNow: 0
+  DestroyOnCollision: 1
+  NeededCollisionForceToDestroy: 3
+  ExplodeForce: 500
+  ExplosionParticleSystem: {fileID: 0}
